@@ -1,0 +1,11 @@
+<!--pages/goodsLists/goodsLists.wxml-->
+<view class="goodsDetail">
+  <view class="meta">
+    <view class="detailName">{{item.name}}</view>
+    <view class="detailPrice">价格：{{item.price}}</view>
+    <view class="detailDescription">概要：{{item.description || 'none'}}</view>
+  </view>
+  <view wx:for="{{item.images}}" wx:key="id">
+    <image class="detailImage" src="{{item}}" mode="aspectFit" />
+  </view>
+</view>

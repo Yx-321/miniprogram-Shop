@@ -1,0 +1,21 @@
+<!--pages/goodsLists/goodsLists.wxml-->
+<view class="cartList">
+  <view wx:for="{{cart}}" wx:key="id">
+    <navigator class="cartItem" url="../goodsDetail/goodsDetail?id={{item.item.id}}" open-type="navigate"
+      hover-class="navigate-hover" bindtap="navigateToDetails">
+      <image class="itemImage" src="{{item.item.images[0]}}" mode="aspectFit" />
+      <view class="meta">
+        <view class="itemName">{{item.item.name}}</view>
+        <view class="itemPrice">价格：{{item.item.price}}</view>
+      </view>
+    </navigator>
+    <text class="itemPrice">数量：</text>
+    <image class="addRemove" src="../../images/remove.png" bindtap="removeItem" data-item="{{item}}"></image>
+    <text class="itemPrice">{{item.count}}</text>
+    <image class="addRemove" src="../../images/add.png" bindtap="addItem" data-item="{{item}}"></image>
+  </view>
+  <view class="buyView">
+    <view>总价：{{totalPrice}}</view>
+    <button class="buyButton" size="mini" bindtap="pay">结算</button>
+  </view>
+</view>

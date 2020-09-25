@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/goodsLists/goodsLists",
+    "pages/goodsDetail/goodsDetail",
+    "pages/myCart/myCart",
+    "pages/my/my",
+    "pages/searchPage/searchPage"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "菲菲的小店",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFF",
+    "color": "#999999",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/goodsLists/goodsLists",
+      "text": "首页",
+      "iconPath": "images/home-off.png",
+      "selectedIconPath": "images/home-on.png"
+    },
+    {
+      "pagePath": "pages/myCart/myCart",
+      "text": "购物车",
+      "iconPath": "images/cart-off.png",
+      "selectedIconPath": "images/cart-on.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "images/my-off.png",
+      "selectedIconPath": "images/my-on.png"
+    }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

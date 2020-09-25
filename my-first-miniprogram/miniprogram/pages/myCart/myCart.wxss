@@ -1,0 +1,37 @@
+.cartList {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  box-sizing: border-box;
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 160px;
+  border-color: greenyellow;
+  border-width: medium;
+}
+
+.itemImage {
+  width: 100px;
+  height: 100px;
+  border: black;
+}
+
+.buyButton {
+  background-color: #E64340;
+  align-self: flex-end;
+  margin-right: 0rem;
+}
+
+.addRemove {
+  width: 20px;
+  height: 20px;
+}
+
+.buyView {
+  align-self: flex-end;
+  margin-right: 1rem;
+}
